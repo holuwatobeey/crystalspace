@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="header-inner text-white">
+                    <div class="header-inner">
                         <h1 class="title">
                             @php
                                 $title = str_replace('{color}','<span class="base-color">',$data->title);
@@ -19,14 +19,14 @@
                             {!! $title !!}
                         </h1>
                         <p>{{$data->description}}</p>
-                        {{-- <div class="btn-wrapper">
+                        <div class="btn-wrapper">
                             @if(!empty($data->btn_01_status))
                             <a href="{{$data->btn_01_url}}" class="boxed-btn btn-rounded">{{$data->btn_01_text}}</a>
                             @endif
                             @if(!empty($data->btn_02_status))
                             <a href="{{$data->btn_02_url}}" class="boxed-btn btn-rounded blank">{{$data->btn_02_text}}</a>
                             @endif
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
 
