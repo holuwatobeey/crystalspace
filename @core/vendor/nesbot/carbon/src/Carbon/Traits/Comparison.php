@@ -31,6 +31,15 @@ use InvalidArgumentException;
  */
 trait Comparison
 {
+<<<<<<< HEAD
+=======
+    /** @var bool */
+    protected $endOfTime = false;
+
+    /** @var bool */
+    protected $startOfTime = false;
+
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     /**
      * Determines if the instance is equal to another
      *
@@ -1040,4 +1049,27 @@ trait Comparison
 
         return (bool) @preg_match('/^'.$regex.'$/', $date);
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Returns true if the date was created using CarbonImmutable::startOfTime()
+     *
+     * @return bool
+     */
+    public function isStartOfTime(): bool
+    {
+        return $this->startOfTime ?? false;
+    }
+
+    /**
+     * Returns true if the date was created using CarbonImmutable::endOfTime()
+     *
+     * @return bool
+     */
+    public function isEndOfTime(): bool
+    {
+        return $this->endOfTime ?? false;
+    }
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }

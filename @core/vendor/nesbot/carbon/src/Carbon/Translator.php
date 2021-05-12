@@ -313,7 +313,11 @@ class Translator extends Translation\Translator
      */
     public function setLocale($locale)
     {
+<<<<<<< HEAD
         $locale = preg_replace_callback('/[-_]([a-z]{2,})/', function ($matches) {
+=======
+        $locale = preg_replace_callback('/[-_]([a-z]{2,}|[0-9]{2,})/', function ($matches) {
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             // _2-letters or YUE is a region, _3+-letters is a variant
             $upper = strtoupper($matches[1]);
 

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 
 
 
@@ -13,6 +14,10 @@
 namespace Composer;
 
 use Composer\Autoload\ClassLoader;
+=======
+namespace Composer;
+
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 use Composer\Semver\VersionParser;
 
 
@@ -25,12 +30,21 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
+<<<<<<< HEAD
     'pretty_version' => '1.0.0+no-version-set',
     'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
     'reference' => NULL,
+=======
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
+    'aliases' => 
+    array (
+    ),
+    'reference' => 'a568bae57772a52285558b35db714a5e2ccedcf3',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -179,196 +193,308 @@ private static $installed = array (
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/broadcasting' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/bus' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/cache' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/config' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/console' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/container' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/contracts' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/cookie' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/database' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/encryption' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/events' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/filesystem' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/hashing' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/http' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/log' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/mail' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/notifications' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/pagination' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/pipeline' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/queue' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/redis' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/routing' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/session' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/support' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/translation' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/validation' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'illuminate/view' => 
     array (
       'replaced' => 
       array (
+<<<<<<< HEAD
         0 => 'v6.20.26',
+=======
+        0 => 'v6.20.27',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
       ),
     ),
     'intervention/image' => 
@@ -403,6 +529,7 @@ private static $installed = array (
     ),
     'laravel/framework' => 
     array (
+<<<<<<< HEAD
       'pretty_version' => 'v6.20.26',
       'version' => '6.20.26.0',
       'aliases' => 
@@ -418,6 +545,23 @@ private static $installed = array (
       array (
       ),
       'reference' => NULL,
+=======
+      'pretty_version' => 'v6.20.27',
+      'version' => '6.20.27.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '92c0417e60efc39bc556ba5dfc9b20a56f7848fb',
+    ),
+    'laravel/laravel' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a568bae57772a52285558b35db714a5e2ccedcf3',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     ),
     'laravel/tinker' => 
     array (
@@ -497,12 +641,21 @@ private static $installed = array (
     ),
     'nesbot/carbon' => 
     array (
+<<<<<<< HEAD
       'pretty_version' => '2.47.0',
       'version' => '2.47.0.0',
       'aliases' => 
       array (
       ),
       'reference' => '606262fd8888b75317ba9461825a24fc34001e1e',
+=======
+      'pretty_version' => '2.48.0',
+      'version' => '2.48.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd3c447f21072766cddec3522f9468a5849a76147',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     ),
     'nikic/php-parser' => 
     array (
@@ -1179,8 +1332,11 @@ private static $installed = array (
     ),
   ),
 );
+<<<<<<< HEAD
 private static $canGetVendors;
 private static $installedByVendor = array();
+=======
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
 
 
@@ -1190,6 +1346,7 @@ private static $installedByVendor = array();
 
 public static function getInstalledPackages()
 {
+<<<<<<< HEAD
 $packages = array();
 foreach (self::getInstalled() as $installed) {
 $packages[] = array_keys($installed['versions']);
@@ -1201,6 +1358,9 @@ return $packages[0];
 }
 
 return array_keys(array_flip(\call_user_func_array('array_merge', $packages)));
+=======
+return array_keys(self::$installed['versions']);
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 
@@ -1213,6 +1373,7 @@ return array_keys(array_flip(\call_user_func_array('array_merge', $packages)));
 
 public static function isInstalled($packageName)
 {
+<<<<<<< HEAD
 foreach (self::getInstalled() as $installed) {
 if (isset($installed['versions'][$packageName])) {
 return true;
@@ -1220,6 +1381,9 @@ return true;
 }
 
 return false;
+=======
+return isset(self::$installed['versions'][$packageName]);
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 
@@ -1254,6 +1418,7 @@ return $provided->matches($constraint);
 
 public static function getVersionRanges($packageName)
 {
+<<<<<<< HEAD
 foreach (self::getInstalled() as $installed) {
 if (!isset($installed['versions'][$packageName])) {
 continue;
@@ -1271,20 +1436,42 @@ $ranges = array_merge($ranges, $installed['versions'][$packageName]['replaced'])
 }
 if (array_key_exists('provided', $installed['versions'][$packageName])) {
 $ranges = array_merge($ranges, $installed['versions'][$packageName]['provided']);
+=======
+if (!isset(self::$installed['versions'][$packageName])) {
+throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+}
+
+$ranges = array();
+if (isset(self::$installed['versions'][$packageName]['pretty_version'])) {
+$ranges[] = self::$installed['versions'][$packageName]['pretty_version'];
+}
+if (array_key_exists('aliases', self::$installed['versions'][$packageName])) {
+$ranges = array_merge($ranges, self::$installed['versions'][$packageName]['aliases']);
+}
+if (array_key_exists('replaced', self::$installed['versions'][$packageName])) {
+$ranges = array_merge($ranges, self::$installed['versions'][$packageName]['replaced']);
+}
+if (array_key_exists('provided', self::$installed['versions'][$packageName])) {
+$ranges = array_merge($ranges, self::$installed['versions'][$packageName]['provided']);
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 return implode(' || ', $ranges);
 }
 
+<<<<<<< HEAD
 throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
 }
 
+=======
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
 
 
 
 public static function getVersion($packageName)
 {
+<<<<<<< HEAD
 foreach (self::getInstalled() as $installed) {
 if (!isset($installed['versions'][$packageName])) {
 continue;
@@ -1298,6 +1485,17 @@ return $installed['versions'][$packageName]['version'];
 }
 
 throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+=======
+if (!isset(self::$installed['versions'][$packageName])) {
+throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+}
+
+if (!isset(self::$installed['versions'][$packageName]['version'])) {
+return null;
+}
+
+return self::$installed['versions'][$packageName]['version'];
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 
@@ -1306,6 +1504,7 @@ throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed
 
 public static function getPrettyVersion($packageName)
 {
+<<<<<<< HEAD
 foreach (self::getInstalled() as $installed) {
 if (!isset($installed['versions'][$packageName])) {
 continue;
@@ -1319,6 +1518,17 @@ return $installed['versions'][$packageName]['pretty_version'];
 }
 
 throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+=======
+if (!isset(self::$installed['versions'][$packageName])) {
+throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+}
+
+if (!isset(self::$installed['versions'][$packageName]['pretty_version'])) {
+return null;
+}
+
+return self::$installed['versions'][$packageName]['pretty_version'];
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 
@@ -1327,6 +1537,7 @@ throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed
 
 public static function getReference($packageName)
 {
+<<<<<<< HEAD
 foreach (self::getInstalled() as $installed) {
 if (!isset($installed['versions'][$packageName])) {
 continue;
@@ -1340,6 +1551,17 @@ return $installed['versions'][$packageName]['reference'];
 }
 
 throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+=======
+if (!isset(self::$installed['versions'][$packageName])) {
+throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed');
+}
+
+if (!isset(self::$installed['versions'][$packageName]['reference'])) {
+return null;
+}
+
+return self::$installed['versions'][$packageName]['reference'];
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 
@@ -1348,9 +1570,13 @@ throw new \OutOfBoundsException('Package "' . $packageName . '" is not installed
 
 public static function getRootPackage()
 {
+<<<<<<< HEAD
 $installed = self::getInstalled();
 
 return $installed[0]['root'];
+=======
+return self::$installed['root'];
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 
 
@@ -1385,6 +1611,7 @@ return self::$installed;
 public static function reload($data)
 {
 self::$installed = $data;
+<<<<<<< HEAD
 self::$installedByVendor = array();
 }
 
@@ -1412,5 +1639,7 @@ $installed[] = self::$installedByVendor[$vendorDir] = require $vendorDir.'/compo
 $installed[] = self::$installed;
 
 return $installed;
+=======
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }
 }

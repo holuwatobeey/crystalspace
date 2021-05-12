@@ -37,7 +37,11 @@ use RuntimeException;
 /**
  * Substitution of DatePeriod with some modifications and many more features.
  *
+<<<<<<< HEAD
  * @property-read int $recurrences number of recurrences (if end not set).
+=======
+ * @property-read int|float $recurrences number of recurrences (if end not set).
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
  * @property-read bool $include_start_date rather the start date is included in the iteration.
  * @property-read bool $include_end_date rather the end date is included in the iteration (if recurrences not set).
  * @property-read CarbonInterface $start Period start date.
@@ -213,6 +217,16 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public const NEXT_MAX_ATTEMPTS = 1000;
 
     /**
+<<<<<<< HEAD
+=======
+     * Number of maximum attempts before giving up on finding end date.
+     *
+     * @var int
+     */
+    public const END_MAX_ATTEMPTS = 10000;
+
+    /**
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      * The registered macros.
      *
      * @var array
@@ -981,7 +995,11 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     /**
      * Get number of recurrences.
      *
+<<<<<<< HEAD
      * @return int|null
+=======
+     * @return int|float|null
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      */
     public function getRecurrences()
     {
@@ -1205,9 +1223,15 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     /**
      * Add a recurrences filter (set maximum number of recurrences).
      *
+<<<<<<< HEAD
      * @param int|null $recurrences
      *
      * @throws \InvalidArgumentException
+=======
+     * @param int|float|null $recurrences
+     *
+     * @throws InvalidArgumentException
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      *
      * @return $this
      */
@@ -1221,7 +1245,11 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             return $this->removeFilter(static::RECURRENCES_FILTER);
         }
 
+<<<<<<< HEAD
         $this->recurrences = (int) $recurrences;
+=======
+        $this->recurrences = $recurrences === INF ? INF : (int) $recurrences;
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
         if (!$this->hasFilter(static::RECURRENCES_FILTER)) {
             return $this->addFilter(static::RECURRENCES_FILTER);
@@ -1708,9 +1736,17 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             return $end;
         }
 
+<<<<<<< HEAD
         $dates = iterator_to_array($this);
 
         $date = end($dates);
+=======
+        if ($this->dateInterval->isEmpty()) {
+            return $this->getStartDate($rounding);
+        }
+
+        $date = $this->getEndFromRecurrences() ?? $this->iterateUntilEnd();
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
         if ($date && $rounding) {
             $date = $date->copy()->round($this->getDateInterval(), $rounding);
@@ -1720,6 +1756,59 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * @return CarbonInterface|null
+     */
+    private function getEndFromRecurrences()
+    {
+        if ($this->recurrences === null) {
+            throw new UnreachableException(
+                "Could not calculate period end without either explicit end or recurrences.\n".
+                "If you're looking for a forever-period, use ->setRecurrences(INF)."
+            );
+        }
+
+        if ($this->recurrences === INF) {
+            $start = $this->getStartDate();
+
+            return $start < $start->copy()->add($this->getDateInterval())
+                ? CarbonImmutable::endOfTime()
+                : CarbonImmutable::startOfTime();
+        }
+
+        if ($this->filters === [[static::RECURRENCES_FILTER, null]]) {
+            return $this->getStartDate()->copy()->add(
+                $this->getDateInterval()->times(
+                    $this->recurrences - ($this->isStartExcluded() ? 0 : 1)
+                )
+            );
+        }
+
+        return null;
+    }
+
+    /**
+     * @return CarbonInterface|null
+     */
+    private function iterateUntilEnd()
+    {
+        $attempts = 0;
+        $date = null;
+
+        foreach ($this as $date) {
+            if (++$attempts > static::END_MAX_ATTEMPTS) {
+                throw new UnreachableException(
+                    'Could not calculate period end after iterating '.static::END_MAX_ATTEMPTS.' times.'
+                );
+            }
+        }
+
+        return $date;
+    }
+
+    /**
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      * Returns true if the current period overlaps the given one (if 1 parameter passed)
      * or the period between 2 dates (if 2 parameters passed).
      *
@@ -1736,7 +1825,19 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             $range = static::create($range);
         }
 
+<<<<<<< HEAD
         return $this->calculateEnd() > $range->getStartDate() && $range->calculateEnd() > $this->getStartDate();
+=======
+        $thisDates = [$this->getStartDate(), $this->calculateEnd()];
+        sort($thisDates);
+        [$start, $end] = $thisDates;
+
+        $rangeDates = [$range->getStartDate(), $range->calculateEnd()];
+        sort($rangeDates);
+        [$rangeStart, $rangeEnd] = $rangeDates;
+
+        return $end > $rangeStart && $rangeEnd > $start;
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     }
 
     /**

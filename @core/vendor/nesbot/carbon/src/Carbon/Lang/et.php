@@ -31,6 +31,7 @@
  * - João Magalhães
  * - Ingmar
  * - Illimar Tambek
+<<<<<<< HEAD
  */
 return [
     'year' => ':count aasta|:count aastat',
@@ -47,6 +48,25 @@ return [
     'min' => ':count minut|:count minutit',
     'second' => ':count sekund|:count sekundit',
     's' => ':count sekund|:count sekundit',
+=======
+ * - Mihkel
+ */
+return [
+    'year' => ':count aasta|:count aastat',
+    'y' => ':count a',
+    'month' => ':count kuu|:count kuud',
+    'm' => ':count k',
+    'week' => ':count nädal|:count nädalat',
+    'w' => ':count näd',
+    'day' => ':count päev|:count päeva',
+    'd' => ':count p',
+    'hour' => ':count tund|:count tundi',
+    'h' => ':count t',
+    'minute' => ':count minut|:count minutit',
+    'min' => ':count min',
+    'second' => ':count sekund|:count sekundit',
+    's' => ':count s',
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     'ago' => ':time tagasi',
     'from_now' => ':time pärast',
     'after' => ':time pärast',

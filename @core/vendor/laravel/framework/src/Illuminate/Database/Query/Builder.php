@@ -1932,7 +1932,11 @@ class Builder
     {
         $property = $this->unions ? 'unionOffset' : 'offset';
 
+<<<<<<< HEAD
         $this->$property = max(0, $value);
+=======
+        $this->$property = max(0, (int) $value);
+>>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
         return $this;
     }
