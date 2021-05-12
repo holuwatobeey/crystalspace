@@ -39,7 +39,7 @@
         <div class="container">
             <div class="row">
                 @foreach($all_counterup as $data)
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="single-counterup-item">
                             <div class="icon">
                                 <i class="{{$data->icon}}"></i>
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <div class="team-member-area">
+    {{-- <div class="team-member-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -99,8 +99,8 @@
                 @endforeach
             </div>
         </div>
-    </div>
-
+    </div> --}}
+{{-- 
     <div class="brand-carousel-area gray-bg">
         <div class="container">
             <div class="row">
@@ -117,6 +117,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 @endsection

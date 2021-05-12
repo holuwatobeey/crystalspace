@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="header-inner">
-                                <h1 class="title">
+                                <h1 class="title" style="color:white !important">
                                     <?php
                                         $title = str_replace('{color}','<span class="base-color">',$data->title);
                                         $title = str_replace('{/color}','</span>',$title);
@@ -20,7 +20,7 @@
                                     <?php echo $title; ?>
 
                                 </h1>
-                                <p><?php echo e($data->description); ?></p>
+                                <p style="color:white !important"><?php echo e($data->description); ?></p>
                                 <div class="btn-wrapper">
                                     <?php if(!empty($data->btn_01_status)): ?>
                                         <a href="<?php echo e($data->btn_01_url); ?>" class="boxed-btn"><?php echo e($data->btn_01_text); ?></a>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="content">
                                 <h4 class="title"><?php echo e($data->title); ?></h4>
-                                <p><?php echo e($data->description); ?></p>
+                                
                             </div>
                         </div>
                     </div>
@@ -120,11 +120,10 @@
                         </div>
                     </div>
                     <div class="content">
-                        <a href="<?php echo e(route('frontend.services.single',['id' => $data->id,'any' => Str::slug($data->title)])); ?>"><h4 class="title"><?php echo e($data->title); ?></h4></a>
-                        <div class="post-description">
-                            <p><?php echo e($data->excerpt); ?></p>
-                        </div>
-                        <a href="<?php echo e(route('frontend.services.single',['id' => $data->id,'any' => Str::slug($data->title)])); ?>" class="readmore"><?php echo e(__('Read More')); ?></a>
+                        <h4 class="title"><?php echo e($data->title); ?></h4>
+                        
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -142,7 +141,7 @@
         <div class="container">
             <div class="row">
                 <?php $__currentLoopData = $all_counterup; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="single-counterup-item black-theme">
                             <div class="icon">
                                 <i class="<?php echo e($data->icon); ?>"></i>
@@ -200,7 +199,7 @@
                                     <div class="hover">
                                         <ul>
                                             <li><a href="<?php echo e($img_url); ?>" class="image-popup"> <i class="flaticon-image"></i> </a></li>
-                                            <li><a href="<?php echo e(route('frontend.work.single',['id' => $data->id,'any' => Str::slug($data->title)])); ?>"> <i class="flaticon-link-symbol"></i> </a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>

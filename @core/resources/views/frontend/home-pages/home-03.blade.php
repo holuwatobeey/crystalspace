@@ -12,14 +12,14 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="header-inner">
-                                <h1 class="title">
+                                <h1 class="title" style="color:white !important">
                                     @php
                                         $title = str_replace('{color}','<span class="base-color">',$data->title);
                                         $title = str_replace('{/color}','</span>',$title);
                                     @endphp
                                     {!! $title !!}
                                 </h1>
-                                <p>{{$data->description}}</p>
+                                <p style="color:white !important">{{$data->description}}</p>
                                 <div class="btn-wrapper">
                                     @if(!empty($data->btn_01_status))
                                         <a href="{{$data->btn_01_url}}" class="boxed-btn">{{$data->btn_01_text}}</a>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="content">
                                 <h4 class="title">{{$data->title}}</h4>
-                                <p>{{$data->description}}</p>
+                                {{-- <p>{{$data->description}}</p> --}}
                             </div>
                         </div>
                     </div>
@@ -119,11 +119,12 @@
                         </div>
                     </div>
                     <div class="content">
-                        <a href="{{route('frontend.services.single',['id' => $data->id,'any' => Str::slug($data->title)])}}"><h4 class="title">{{$data->title}}</h4></a>
-                        <div class="post-description">
+                        <h4 class="title">{{$data->title}}</h4>
+                        {{-- <a href="{{route('frontend.services.single',['id' => $data->id,'any' => Str::slug($data->title)])}}"><h4 class="title">{{$data->title}}</h4></a> --}}
+                        {{-- <div class="post-description">
                             <p>{{$data->excerpt}}</p>
-                        </div>
-                        <a href="{{route('frontend.services.single',['id' => $data->id,'any' => Str::slug($data->title)])}}" class="readmore">{{__('Read More')}}</a>
+                        </div> --}}
+                        {{-- <a href="{{route( 'frontend.services.single',['id' => $data->id,'any' => Str::slug($data->title)])}}" class="readmore">{{__('Read More')}}</a> --}}
                     </div>
                 </div>
             </div>
@@ -141,7 +142,7 @@
         <div class="container">
             <div class="row">
                 @foreach($all_counterup as $data)
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="single-counterup-item black-theme">
                             <div class="icon">
                                 <i class="{{$data->icon}}"></i>
@@ -199,7 +200,7 @@
                                     <div class="hover">
                                         <ul>
                                             <li><a href="{{$img_url}}" class="image-popup"> <i class="flaticon-image"></i> </a></li>
-                                            <li><a href="{{route('frontend.work.single',['id' => $data->id,'any' => Str::slug($data->title)])}}"> <i class="flaticon-link-symbol"></i> </a></li>
+                                            {{-- <li><a href="{{route('frontend.work.single',['id' => $data->id,'any' => Str::slug($data->title)])}}"> <i class="flaticon-link-symbol"></i> </a></li> --}}
                                         </ul>
                                     </div>
                                 </div>

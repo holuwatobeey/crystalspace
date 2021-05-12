@@ -43,7 +43,7 @@
                 <?php endif; ?>
                 <?php if(!empty(get_static_option('navbar_button'))): ?>
                     <li class="navbar-btn-wrapper">
-                        <a class="boxed-btn" href="<?php echo e(route('frontend.request.quote')); ?>"><?php echo e(get_static_option("navbar_".get_user_lang()."_button_text")); ?></a>
+                        <a style="color:white;" class="boxed-btn" href="<?php echo e(route('frontend.request.quote')); ?>"><?php echo e(get_static_option("navbar_".get_user_lang()."_button_text")); ?></a>
                     </li>
                 <?php endif; ?>
             </ul>

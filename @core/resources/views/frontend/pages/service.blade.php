@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 @foreach($all_price_plan as $data)
                 <div class="col-lg-4 col-md-6">
                     <div class="single-price-plan-01">
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 @endforeach
-            </div>
+            </div> --}}
         </div>
     </section>
     <section class="call-to-action-area">

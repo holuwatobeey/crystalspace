@@ -43,7 +43,7 @@
                 @endif
                 @if(!empty(get_static_option('navbar_button')))
                     <li class="navbar-btn-wrapper">
-                        <a class="boxed-btn" href="{{route('frontend.request.quote')}}">{{get_static_option("navbar_".get_user_lang()."_button_text")}}</a>
+                        <a style="color:white;" class="boxed-btn" href="{{route('frontend.request.quote')}}">{{get_static_option("navbar_".get_user_lang()."_button_text")}}</a>
                     </li>
                 @endif
             </ul>

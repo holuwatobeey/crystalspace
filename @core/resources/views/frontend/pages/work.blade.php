@@ -34,7 +34,7 @@
                                     <div class="hover">
                                         <ul>
                                             <li><a href="{{$img_url}}" class="image-popup"> <i class="flaticon-image"></i> </a></li>
-                                            <li><a href="{{route('frontend.work.single',['id' => $data->id,'any' => Str::slug($data->title)])}}"> <i class="flaticon-link-symbol"></i> </a></li>
+                                            {{-- <li><a href="{{route('frontend.work.single',['id' => $data->id,'any' => Str::slug($data->title)])}}"> <i class="flaticon-link-symbol"></i> </a></li> --}}
                                         </ul>
                                     </div>
                                 </div>

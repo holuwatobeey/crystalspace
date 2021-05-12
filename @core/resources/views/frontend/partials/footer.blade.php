@@ -7,7 +7,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="footer-widget about_widget">
                         <div class="footer-logo">
                             <a href="{{url('/')}}" class="footer-logo">
@@ -17,7 +17,7 @@
                             </a>
                         </div>
                         <p>{{get_static_option('about_widget_'.get_user_lang().'_description')}}</p>
-                        <ul class="social-icons">
+                        {{-- <ul class="social-icons">
                             @if(!empty(get_static_option('about_widget_social_icon_one')) && !empty(get_static_option('about_widget_social_icon_one_url')))
                                 <li><a href="{{get_static_option('about_widget_social_icon_one_url')}}"><i class="{{get_static_option('about_widget_social_icon_one')}}"></i></a></li>
                             @endif
@@ -30,10 +30,10 @@
                             @if(!empty(get_static_option('about_widget_social_icon_four')) && !empty(get_static_option('about_widget_social_icon_four_url')))
                                 <li><a href="{{get_static_option('about_widget_social_icon_four_url')}}"><i class="{{get_static_option('about_widget_social_icon_four')}}"></i></a></li>
                             @endif
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="footer-widget widget_nav_menu">
                         <h2 class="widget-title">{{get_static_option('useful_link_'.get_user_lang().'_widget_title')}}</h2>
                         <ul>
@@ -45,7 +45,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="footer-widget widget_nav_menu">
                         <h2 class="widget-title">{{get_static_option('important_link_'.get_user_lang().'_widget_title')}}</h2>
                         <ul>
@@ -57,7 +57,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                {{-- <div class="col-lg-4 col-md-6">
                     <div class="footer-widget widget_popular_posts">
                         <h4 class="widget-title">{{get_static_option('recent_post_'.get_user_lang().'_widget_title')}}?</h4>
                         <ul>
@@ -76,7 +76,7 @@
                             @endforeach
                         </ul>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="footer-widget about_widget">
                         <div class="footer-logo">
                             <a href="<?php echo e(url('/')); ?>" class="footer-logo">
@@ -17,23 +17,10 @@
                             </a>
                         </div>
                         <p><?php echo e(get_static_option('about_widget_'.get_user_lang().'_description')); ?></p>
-                        <ul class="social-icons">
-                            <?php if(!empty(get_static_option('about_widget_social_icon_one')) && !empty(get_static_option('about_widget_social_icon_one_url'))): ?>
-                                <li><a href="<?php echo e(get_static_option('about_widget_social_icon_one_url')); ?>"><i class="<?php echo e(get_static_option('about_widget_social_icon_one')); ?>"></i></a></li>
-                            <?php endif; ?>
-                            <?php if(!empty(get_static_option('about_widget_social_icon_two')) && !empty(get_static_option('about_widget_social_icon_two_url'))): ?>
-                                <li><a href="<?php echo e(get_static_option('about_widget_social_icon_two_url')); ?>"><i class="<?php echo e(get_static_option('about_widget_social_icon_two')); ?>"></i></a></li>
-                            <?php endif; ?>
-                            <?php if(!empty(get_static_option('about_widget_social_icon_three')) && !empty(get_static_option('about_widget_social_icon_three_url'))): ?>
-                                <li><a href="<?php echo e(get_static_option('about_widget_social_icon_three_url')); ?>"><i class="<?php echo e(get_static_option('about_widget_social_icon_three')); ?>"></i></a></li>
-                            <?php endif; ?>
-                            <?php if(!empty(get_static_option('about_widget_social_icon_four')) && !empty(get_static_option('about_widget_social_icon_four_url'))): ?>
-                                <li><a href="<?php echo e(get_static_option('about_widget_social_icon_four_url')); ?>"><i class="<?php echo e(get_static_option('about_widget_social_icon_four')); ?>"></i></a></li>
-                            <?php endif; ?>
-                        </ul>
+                        
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="footer-widget widget_nav_menu">
                         <h2 class="widget-title"><?php echo e(get_static_option('useful_link_'.get_user_lang().'_widget_title')); ?></h2>
                         <ul>
@@ -45,7 +32,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <div class="footer-widget widget_nav_menu">
                         <h2 class="widget-title"><?php echo e(get_static_option('important_link_'.get_user_lang().'_widget_title')); ?></h2>
                         <ul>
@@ -57,26 +44,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-widget widget_popular_posts">
-                        <h4 class="widget-title"><?php echo e(get_static_option('recent_post_'.get_user_lang().'_widget_title')); ?>?</h4>
-                        <ul>
-                            <?php $__currentLoopData = $all_recent_post; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <li class="single-popular-post-item">
-                                    <div class="thumb">
-                                        <?php if(file_exists('assets/uploads/blog/blog-grid-'.$data->id.'.'.$data->image)): ?>
-                                            <img src="<?php echo e(asset('assets/uploads/blog/blog-grid-'.$data->id.'.'.$data->image)); ?>" alt="<?php echo e($data->title); ?>">
-                                        <?php endif; ?>
-                                    </div>
-                                    <div class="content">
-                                        <span class="time"><i class="fa fa-calendar"></i> <?php echo e($data->created_at->diffForHumans()); ?></span>
-                                        <h4 class="title"><a href="<?php echo e(route('frontend.blog.single',['id' => $data->id, 'any' => Str::slug($data->title,'-')])); ?>"><?php echo e($data->title); ?></a></h4>
-                                    </div>
-                                </li>
-                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                        </ul>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
