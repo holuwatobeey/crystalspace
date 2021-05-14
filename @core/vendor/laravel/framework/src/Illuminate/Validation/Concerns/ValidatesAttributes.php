@@ -1466,13 +1466,6 @@ trait ValidatesAttributes
     {
         $this->requireParameterCount(2, $parameters, 'exclude_unless');
 
-<<<<<<< HEAD
-        if (! Arr::has($this->data, $parameters[0])) {
-            return true;
-        }
-
-=======
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
         [$values, $other] = $this->prepareValuesAndOther($parameters);
 
         return in_array($other, $values, is_bool($other) || is_null($other));
@@ -1490,13 +1483,6 @@ trait ValidatesAttributes
     {
         $this->requireParameterCount(2, $parameters, 'required_unless');
 
-<<<<<<< HEAD
-        if (! Arr::has($this->data, $parameters[0])) {
-            return true;
-        }
-
-=======
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
         [$values, $other] = $this->prepareValuesAndOther($parameters);
 
         if (! in_array($other, $values, is_bool($other) || is_null($other))) {

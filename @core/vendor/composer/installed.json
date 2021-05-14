@@ -1030,30 +1030,14 @@
                 "thumbnail",
                 "watermark"
             ],
-<<<<<<< HEAD
-=======
             "support": {
                 "issues": "https://github.com/Intervention/image/issues",
                 "source": "https://github.com/Intervention/image/tree/master"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../intervention/image"
         },
         {
             "name": "laravel/framework",
-<<<<<<< HEAD
-            "version": "v6.20.26",
-            "version_normalized": "6.20.26.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "0117d797dc1ab64b1f88d4f6b966380ea7def091"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0117d797dc1ab64b1f88d4f6b966380ea7def091",
-                "reference": "0117d797dc1ab64b1f88d4f6b966380ea7def091",
-=======
             "version": "v6.20.27",
             "version_normalized": "6.20.27.0",
             "source": {
@@ -1065,7 +1049,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/92c0417e60efc39bc556ba5dfc9b20a56f7848fb",
                 "reference": "92c0417e60efc39bc556ba5dfc9b20a56f7848fb",
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
                 "shasum": ""
             },
             "require": {
@@ -1170,11 +1153,7 @@
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.2).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
-<<<<<<< HEAD
-            "time": "2021-04-28T14:38:32+00:00",
-=======
             "time": "2021-05-11T14:00:28+00:00",
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1277,13 +1256,10 @@
                 "laravel",
                 "psysh"
             ],
-<<<<<<< HEAD
-=======
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
                 "source": "https://github.com/laravel/tinker/tree/v1.0.10"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../laravel/tinker"
         },
         {
@@ -1841,19 +1817,6 @@
         },
         {
             "name": "nesbot/carbon",
-<<<<<<< HEAD
-            "version": "2.47.0",
-            "version_normalized": "2.47.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "606262fd8888b75317ba9461825a24fc34001e1e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/606262fd8888b75317ba9461825a24fc34001e1e",
-                "reference": "606262fd8888b75317ba9461825a24fc34001e1e",
-=======
             "version": "2.48.0",
             "version_normalized": "2.48.0.0",
             "source": {
@@ -1865,7 +1828,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d3c447f21072766cddec3522f9468a5849a76147",
                 "reference": "d3c447f21072766cddec3522f9468a5849a76147",
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
                 "shasum": ""
             },
             "require": {
@@ -1884,11 +1846,7 @@
                 "phpunit/phpunit": "^7.5.20 || ^8.5.14",
                 "squizlabs/php_codesniffer": "^3.4"
             },
-<<<<<<< HEAD
-            "time": "2021-04-13T21:54:02+00:00",
-=======
             "time": "2021-05-07T10:08:30+00:00",
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "bin": [
                 "bin/carbon"
             ],
@@ -2209,14 +2167,11 @@
                 "pseudorandom",
                 "random"
             ],
-<<<<<<< HEAD
-=======
             "support": {
                 "email": "info@paragonie.com",
                 "issues": "https://github.com/paragonie/random_compat/issues",
                 "source": "https://github.com/paragonie/random_compat"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../paragonie/random_compat"
         },
         {
@@ -2934,13 +2889,10 @@
             "keywords": [
                 "template"
             ],
-<<<<<<< HEAD
-=======
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
                 "source": "https://github.com/sebastianbergmann/php-text-template/tree/1.2.1"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../phpunit/php-text-template"
         },
         {
@@ -3270,12 +3222,9 @@
                 "request",
                 "response"
             ],
-<<<<<<< HEAD
-=======
             "support": {
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../psr/http-message"
         },
         {
@@ -3380,12 +3329,9 @@
                 "psr-16",
                 "simple-cache"
             ],
-<<<<<<< HEAD
-=======
             "support": {
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../psr/simple-cache"
         },
         {
@@ -3510,13 +3456,10 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
-<<<<<<< HEAD
-=======
             "support": {
                 "issues": "https://github.com/ralouphie/getallheaders/issues",
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../ralouphie/getallheaders"
         },
         {
@@ -4453,13 +4396,10 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-<<<<<<< HEAD
-=======
             "support": {
                 "issues": "https://github.com/sebastianbergmann/version/issues",
                 "source": "https://github.com/sebastianbergmann/version/tree/master"
             },
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
             "install-path": "../sebastian/version"
         },
         {
@@ -6915,49 +6855,5 @@
             "install-path": "../webmozart/assert"
         }
     ],
-<<<<<<< HEAD
-    "dev": true,
-    "dev-package-names": [
-        "doctrine/instantiator",
-        "facade/flare-client-php",
-        "facade/ignition",
-        "facade/ignition-contracts",
-        "filp/whoops",
-        "fzaninotto/faker",
-        "hamcrest/hamcrest-php",
-        "laravel/ui",
-        "mockery/mockery",
-        "myclabs/deep-copy",
-        "nunomaduro/collision",
-        "phar-io/manifest",
-        "phar-io/version",
-        "phpdocumentor/reflection-common",
-        "phpdocumentor/reflection-docblock",
-        "phpdocumentor/type-resolver",
-        "phpspec/prophecy",
-        "phpunit/php-code-coverage",
-        "phpunit/php-file-iterator",
-        "phpunit/php-text-template",
-        "phpunit/php-timer",
-        "phpunit/php-token-stream",
-        "phpunit/phpunit",
-        "scrivo/highlight.php",
-        "sebastian/code-unit-reverse-lookup",
-        "sebastian/comparator",
-        "sebastian/diff",
-        "sebastian/environment",
-        "sebastian/exporter",
-        "sebastian/global-state",
-        "sebastian/object-enumerator",
-        "sebastian/object-reflector",
-        "sebastian/recursion-context",
-        "sebastian/resource-operations",
-        "sebastian/type",
-        "sebastian/version",
-        "theseer/tokenizer",
-        "webmozart/assert"
-    ]
-=======
     "dev": true
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }

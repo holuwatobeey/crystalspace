@@ -121,12 +121,8 @@ trait MakesHttpRequests
         }
 
         foreach ((array) $middleware as $abstract) {
-<<<<<<< HEAD
-            $this->app->instance($abstract, new class {
-=======
             $this->app->instance($abstract, new class
             {
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
                 public function handle($request, $next)
                 {
                     return $next($request);

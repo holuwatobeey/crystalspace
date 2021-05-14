@@ -37,11 +37,7 @@ use RuntimeException;
 /**
  * Substitution of DatePeriod with some modifications and many more features.
  *
-<<<<<<< HEAD
- * @property-read int $recurrences number of recurrences (if end not set).
-=======
  * @property-read int|float $recurrences number of recurrences (if end not set).
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
  * @property-read bool $include_start_date rather the start date is included in the iteration.
  * @property-read bool $include_end_date rather the end date is included in the iteration (if recurrences not set).
  * @property-read CarbonInterface $start Period start date.
@@ -217,8 +213,6 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public const NEXT_MAX_ATTEMPTS = 1000;
 
     /**
-<<<<<<< HEAD
-=======
      * Number of maximum attempts before giving up on finding end date.
      *
      * @var int
@@ -226,7 +220,6 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     public const END_MAX_ATTEMPTS = 10000;
 
     /**
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      * The registered macros.
      *
      * @var array
@@ -995,11 +988,7 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     /**
      * Get number of recurrences.
      *
-<<<<<<< HEAD
-     * @return int|null
-=======
      * @return int|float|null
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      */
     public function getRecurrences()
     {
@@ -1223,15 +1212,9 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     /**
      * Add a recurrences filter (set maximum number of recurrences).
      *
-<<<<<<< HEAD
-     * @param int|null $recurrences
-     *
-     * @throws \InvalidArgumentException
-=======
      * @param int|float|null $recurrences
      *
      * @throws InvalidArgumentException
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      *
      * @return $this
      */
@@ -1245,11 +1228,7 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             return $this->removeFilter(static::RECURRENCES_FILTER);
         }
 
-<<<<<<< HEAD
-        $this->recurrences = (int) $recurrences;
-=======
         $this->recurrences = $recurrences === INF ? INF : (int) $recurrences;
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
         if (!$this->hasFilter(static::RECURRENCES_FILTER)) {
             return $this->addFilter(static::RECURRENCES_FILTER);
@@ -1736,17 +1715,11 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             return $end;
         }
 
-<<<<<<< HEAD
-        $dates = iterator_to_array($this);
-
-        $date = end($dates);
-=======
         if ($this->dateInterval->isEmpty()) {
             return $this->getStartDate($rounding);
         }
 
         $date = $this->getEndFromRecurrences() ?? $this->iterateUntilEnd();
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 
         if ($date && $rounding) {
             $date = $date->copy()->round($this->getDateInterval(), $rounding);
@@ -1756,8 +1729,6 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     }
 
     /**
-<<<<<<< HEAD
-=======
      * @return CarbonInterface|null
      */
     private function getEndFromRecurrences()
@@ -1808,7 +1779,6 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
     }
 
     /**
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      * Returns true if the current period overlaps the given one (if 1 parameter passed)
      * or the period between 2 dates (if 2 parameters passed).
      *
@@ -1825,9 +1795,6 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
             $range = static::create($range);
         }
 
-<<<<<<< HEAD
-        return $this->calculateEnd() > $range->getStartDate() && $range->calculateEnd() > $this->getStartDate();
-=======
         $thisDates = [$this->getStartDate(), $this->calculateEnd()];
         sort($thisDates);
         [$start, $end] = $thisDates;
@@ -1837,7 +1804,6 @@ class CarbonPeriod implements Iterator, Countable, JsonSerializable
         [$rangeStart, $rangeEnd] = $rangeDates;
 
         return $end > $rangeStart && $rangeEnd > $start;
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     }
 
     /**

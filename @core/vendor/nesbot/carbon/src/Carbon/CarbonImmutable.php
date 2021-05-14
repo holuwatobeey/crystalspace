@@ -509,9 +509,6 @@ use DateTimeZone;
  */
 class CarbonImmutable extends DateTimeImmutable implements CarbonInterface
 {
-<<<<<<< HEAD
-    use Date;
-=======
     use Date {
         __clone as dateTraitClone;
     }
@@ -572,5 +569,4 @@ class CarbonImmutable extends DateTimeImmutable implements CarbonInterface
 
         return max(PHP_INT_MIN, -9223372036854773760);
     }
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
 }

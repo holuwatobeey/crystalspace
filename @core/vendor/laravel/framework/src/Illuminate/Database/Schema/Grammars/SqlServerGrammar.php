@@ -29,21 +29,13 @@ class SqlServerGrammar extends Grammar
     protected $serials = ['tinyInteger', 'smallInteger', 'mediumInteger', 'integer', 'bigInteger'];
 
     /**
-<<<<<<< HEAD
-     * Compile the query to determine if a table exists.
-=======
      * Compile the query to determine if a table or view exists.
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
      *
      * @return string
      */
     public function compileTableExists()
     {
-<<<<<<< HEAD
-        return "select * from sysobjects where type = 'U' and name = ?";
-=======
         return "select * from sysobjects where type in ('U', 'V') and name = ?";
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     }
 
     /**
@@ -56,11 +48,7 @@ class SqlServerGrammar extends Grammar
     {
         return "select col.name from sys.columns as col
                 join sys.objects as obj on col.object_id = obj.object_id
-<<<<<<< HEAD
-                where obj.type = 'U' and obj.name = '$table'";
-=======
                 where obj.type in ('U', 'V') and obj.name = '$table'";
->>>>>>> 72de9bbc5318d97cd0fa3d8098d0adb6e14ac929
     }
 
     /**
